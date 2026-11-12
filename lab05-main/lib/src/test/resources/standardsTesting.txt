@@ -1,0 +1,21 @@
+Which standards tool did you use?
+Google lighthouse
+
+
+
+Name any one test that passed, and describe why that test is important, in your own words.
+What would be the problem if the test had failed?
+
+The Accessibility test passed with a 100% score. This is important as it means that the webpage is easily readable and
+navigable. All clickable icons actually work and go to another page, and the webpage itself can be scrolled and moved.
+
+
+
+
+Name any one test that failed (yellow or red) and explain why the failed test suggest
+there's a problem with the website.  Who is it a problem for?  What kinds of obstacles
+could this issue present?
+
+The webpage failed to pass the performance section, with a score of 56. This is obviously not good, as the website is
+much slower then it should or could be. The cache also failed to clear, further reducing prefromance times and prompting
+a bug report if the issue persisted (It did).
