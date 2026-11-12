@@ -1,0 +1,81 @@
+This is the high level testing plan for the exploratory testing of ATM system 1.0, for Lab08 of SENG275, March 12th 2026
+
+Approach: Test most functions a Little
+
+TEST 1:
+User: Operator
+Function: System Startup
+Action: Inputting a negative value for the amount of money in the ATM
+Expected Result: Error message, cant have negative amount of 20 dollar bills
+Actual Result:Error message, must input a value greater then or equal to zero
+
+TEST 2:
+User: Customer
+Function: Session
+Action: Inputting incorrect Card number
+Expected Result: Error message
+Actual Result: Passes, asked for pin, when pin inputted states invalid card and returns to insert card prompt
+
+TEST 3:
+User: Customer
+Function: Session
+Action: Inputting incorrect Pin number, then the correct Pin number
+Expected Result: Successful access to the bank account
+Actual Result: prompts user to reinput pin after incorrect number, but requires you to put it in twice as it does not recognize the first re attempt.
+
+TEST 4:
+User: Customer
+Function: Session
+Action: Inputting incorrect Pin number 3 times
+Expected Result: Lockout of account, incorrect pin too many times
+Actual Result: Lockout of account
+
+TEST 5:
+User: Customer
+Function: Withdraw
+Action: Attempting to withdraw more money then the ATM has
+Expected Result: error message, cannot withdraw more money then what the ATM has on hand
+Actual Result: error message, insufficient amount of money
+
+TEST 6:
+User: Customer
+Function: Withdraw
+Action: Attempting to withdraw more money then the account has
+Expected Result: error message, cannot withdraw more money then what your bank account has (Sadly)
+Actual Result: when attempting to withdraw 200 dollars out of an account with 100, withdraws 20. When attempting to withdraw 100 dollars out of the same account, proper error is given.
+
+TEST 7:
+User: Customer
+Function: Deposit
+Action: Attempt to deposit a negative amount of money
+Expected Result: error message, cannot deposit a negative value
+Actual Result: does not allow negative inputs, even better
+
+TEST 8:
+User: Customer
+Function: Transfer
+Action: Attempt to transfer more money then is in a account to another account
+Expected Result: error message, transfering too much money
+Actual Result: error message, transferring too much money
+
+TEST 9:
+User: Customer
+Function: Transfer
+Action: Transfer a negative value of money between two accounts
+Expected Result: error message, cannot transfer negative money
+Actual Result: does not allow negative inputs
+
+TEST 10:
+User: Customer
+Function: Inquiry
+Action: Attempt to make an inquiry to find out how much money is in your savings account
+Expected Result: The correct amount of money in your savings account
+Actual Result: the correct amount of money is displayed
+
+
+TEST 11:
+User: Operator
+Function: System Startup
+Action: Input a non integer into the amount of bills in the ATM
+Expected Result: error message, cant put non integer amount of bills
+Actual Result: error message, must put a value greater then or equal too 0

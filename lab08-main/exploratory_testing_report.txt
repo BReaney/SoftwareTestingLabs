@@ -1,0 +1,35 @@
+Exploratory testing report:
+
+Bug number: 1
+Software version: 1.0
+Initial state of the system: System is on and has been told how much money is in it
+Steps to reproduce: input a invalid card number
+Expected outcome: report that the card number does not exist
+Actual outcome: prompts for pin number, when inputted states invalid card and returns to card selection prompt.
+Note this works for some inputs, as inputting 3 as your card number does give the expected error message.
+Fixed in version 1.1? NO
+
+Bug number: 2
+Software version: 1.0
+Initial state of the system: System is on, has been told how much money is in it, and a valid card has been selected
+Steps to reproduce: input a invalid pin, then a correct pin
+Expected outcome: allow access to account after inputting correct pin
+Actual outcome: makes you input correct pin twice, does not pick it up on the first re-input.
+Fixed in version 1.1? NO
+
+Bug number: 3
+Software version: 1.0
+Initial state of the system:System is on, has been told how much money is in it
+Steps to reproduce: input 3 as the card number, then as the pin as well
+Expected outcome: an error message
+Actual outcome: Index 3 out of bounds for length 3, doesnt make much sense.
+Fixed in version 1.1? YES
+
+Bug number: 4
+Software version: 1.0
+Initial state of the system:System is on, has been told how much money is in it, and a valid card has been selected
+Steps to reproduce: attempt to withdraw 200 dollars out of an account with 100
+Expected outcome: an error message
+Actual outcome: withdraws 20 dollars
+Fixed in version 1.1? YES
+

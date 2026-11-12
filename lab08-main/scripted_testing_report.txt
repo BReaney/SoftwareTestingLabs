@@ -1,0 +1,34 @@
+Pair/scripted testing report:
+Partner name (if any): No partner
+
+Bug number: 1
+Software version: 1.0
+Initial state of the system: System is on and not servicing a customer
+Steps to reproduce: input a invalid card number
+Expected outcome: card is ejected, system is ready for another input
+Actual outcome: prompts for pin, once pin is inserted then stated invalid card and resets.
+Fixed in version 1.1? NO
+
+Bug number: 2
+Software version: 1.0
+Initial state of the system: System is on, has been told how much money is in it, and a valid card has been selected
+Steps to reproduce: input a invalid pin, then a correct pin
+Expected outcome: allow access to account after inputting correct pin
+Actual outcome: makes you input correct pin twice, does not pick it up on the first re-input.
+Fixed in version 1.1? NO
+
+Bug number: 3
+Software version: 1.0
+Initial state of the system: system is requesting customer to enter the dollar amount
+Steps to reproduce: input 20.00 dollars into account
+Expected outcome: amount in account should be 20.00 higher then it was (40.00->60.00)
+Actual outcome: amount in account was 10.00 higher then it was (40.00->50.00)
+Fixed in version 1.1?
+
+Bug number: 3
+Software version: 1.0
+Initial state of the system: system is requesting customer to enter the dollar amount
+Steps to reproduce: transfer 20.00 from check to saving
+Expected outcome: amount in account should be 20.00 higher then it was
+Actual outcome: amount in account was 19.50 higher then it was.
+Fixed in version 1.1? NO, 19.90 higher then it was. Hidden fees?
