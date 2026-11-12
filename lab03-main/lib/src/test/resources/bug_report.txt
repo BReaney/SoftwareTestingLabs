@@ -1,0 +1,16 @@
+Title: Incorrect handling of 7 character licenses
+Submitter: B.Reaney
+email address: breaney@uvic.ca
+
+Summary of bug:
+Function incorrectly passes true when a license plate of 7 total characters without a space or hyphen is given
+
+Expected behaviour:
+return false
+Actual behaviour:
+return true
+Steps to Reproduce:
+pass a 7 character liecense plate consisting of no hyphens or spaces and is for a car.
+Severity:
+minor, but should still be fixed
+
